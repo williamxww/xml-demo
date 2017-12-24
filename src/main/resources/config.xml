@@ -1,0 +1,17 @@
+<config>
+    <block path="/user-manager" desc="用户管理模块">
+        <node path="/config.properties" desc="配置文件">
+            <property key="schedule.report" value="0 0 12 * * ?" desc="报表执行时间"/>
+            <property key="schedule.calc" value="0 0 12 * * ?" />
+        </node>
+        <node path="/cache.properties" desc="缓存配置">
+            <property key="report.daily.num" value="2" desc="缓存天数"/>
+        </node>
+    </block>
+
+    <block path="/base-service"  desc="基础服务">
+        <node path="/config.properties" desc="配置文件">
+            <property key="schedule.report" value="0 0 12 * * ?" />
+        </node>
+    </block>
+</config>
